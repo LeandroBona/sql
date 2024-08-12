@@ -157,5 +157,3 @@ INSERT INTO Eventos (nome_evento, data_evento, local, descricao, id_curso) VALUE
 ('Semana Acadêmica', '2023-09-10', 'Auditório A', 'Palestras e workshops para alunos de computação', 1),
 ('Hackathon', '2023-09-15', 'Laboratório B', 'Competição de desenvolvimento de software', 2),
 ('Seminário de Pesquisa', '2023-09-20', 'Sala de Conferências', 'Apresentação de pesquisas recentes', 3);
-
-s9
