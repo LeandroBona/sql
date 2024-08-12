@@ -1,12 +1,15 @@
 # sql
 
 -- Criando o banco de dados (se ainda não existir)
+
 CREATE DATABASE IF NOT EXISTS escola;
 
 -- Usando o banco de dados criado
+
 USE escola;
 
 -- Tabela Estudantes
+
 CREATE TABLE Estudantes (
     id_estudante INT AUTO_INCREMENT PRIMARY KEY,
     nome VARCHAR(100) NOT NULL,
@@ -18,6 +21,7 @@ CREATE TABLE Estudantes (
 );
 
 -- Tabela Cursos
+
 CREATE TABLE Cursos (
     id_curso INT AUTO_INCREMENT PRIMARY KEY,
     nome_curso VARCHAR(100) NOT NULL,
@@ -28,6 +32,7 @@ CREATE TABLE Cursos (
 );
 
 -- Tabela Professores
+
 CREATE TABLE Professores (
     id_professor INT AUTO_INCREMENT PRIMARY KEY,
     nome_professor VARCHAR(100) NOT NULL,
@@ -38,6 +43,7 @@ CREATE TABLE Professores (
 
 
 -- Tabela Matrículas
+
 CREATE TABLE Matriculas (
     id_matricula INT AUTO_INCREMENT PRIMARY KEY,
     id_estudante INT NOT NULL,
@@ -48,6 +54,7 @@ CREATE TABLE Matriculas (
 );
 
 -- Tabela Disciplinas
+
 CREATE TABLE Disciplinas (
     id_disciplina INT AUTO_INCREMENT PRIMARY KEY,
     nome_disciplina VARCHAR(100) NOT NULL,
@@ -60,6 +67,7 @@ CREATE TABLE Disciplinas (
 
 
 -- Tabela Boletim Escolar
+
 CREATE TABLE Boletim_Escolar (
     id_boletim INT AUTO_INCREMENT PRIMARY KEY,
     id_estudante INT NOT NULL,
@@ -73,6 +81,7 @@ CREATE TABLE Boletim_Escolar (
 );
 
 -- Tabela Agenda
+
 CREATE TABLE Agenda (
     id_agenda INT AUTO_INCREMENT PRIMARY KEY,
     id_estudante INT NOT NULL,
@@ -86,6 +95,7 @@ CREATE TABLE Agenda (
 
 
 -- Tabela Eventos
+
 CREATE TABLE Eventos (
     id_evento INT AUTO_INCREMENT PRIMARY KEY,
     nome_evento VARCHAR(100) NOT NULL,
